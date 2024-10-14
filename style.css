@@ -19,10 +19,18 @@ body {
   padding-right: 30px;
 }
 
-.container .dashboard h1 {
+.container .dashboard .nav-top {
+  margin-left: 20px;
   margin-bottom: 30px;
   padding-top: 10px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container .dashboard .nav-top img {
+  height: 30px;
+  width: 30px;
 }
 
 .container .dashboard .row {
