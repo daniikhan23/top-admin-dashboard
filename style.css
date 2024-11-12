@@ -68,7 +68,7 @@ body {
 }
 
 .container .main-container .navbar .top-row {
-  margin-top: 25px;
+  margin: 25px 0;
   width: 80vw;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -112,4 +112,53 @@ body {
   word-break: keep-all;
   font-size: 18px;
   font-weight: 800;
+}
+
+.container .main-container .navbar .bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+  margin-left: 10px;
+}
+
+.container .main-container .navbar .bottom-row .left-side {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 7fr;
+}
+
+.container .main-container .navbar .bottom-row .left-side .part-one,
+.container .main-container .navbar .bottom-row .left-side .part-two {
+  margin-left: 10px;
+}
+
+.container .main-container .navbar .bottom-row .left-side .part-one .profile {
+  height: 60px;
+  width: 60px;
+}
+
+.container .main-container .navbar .bottom-row .left-side .part-two .small {
+}
+
+.container .main-container .navbar .bottom-row .left-side .part-two .large {
+  font-size: 20px;
+}
+
+.container .main-container .navbar .bottom-row .right-side {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 30px;
+}
+
+.container .main-container .navbar .bottom-row .right-side button {
+  background-color: red;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  border: 0px solid;
+  border-radius: 16px;
+  padding: 8px 24px;
 }
