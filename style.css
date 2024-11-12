@@ -3,14 +3,20 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  height: 100vh;
+}
+
+/* Left Navbar */
 .container .dashboard {
   display: grid;
-  width: 20vw;
   color: black;
   background-color: red;
   grid-template-rows: 1fr 4fr 4fr;
-  height: 100vh;
   justify-content: flex-start;
+  height: 100%;
 }
 
 .container .dashboard h1,
@@ -19,7 +25,7 @@ body {
   padding-right: 30px;
 }
 
-.container .dashboard .nav-top {
+.container .dashboard .nav-dash {
   margin-left: 20px;
   margin-bottom: 30px;
   padding-top: 10px;
@@ -28,7 +34,7 @@ body {
   gap: 5px;
 }
 
-.container .dashboard .nav-top img {
+.container .dashboard .nav-dash img {
   height: 30px;
   width: 30px;
 }
@@ -53,4 +59,57 @@ body {
 .container .dashboard .second-set {
   display: grid;
   grid-template-rows: repeat(5, 45px);
+}
+
+.container .main-container {
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.container .main-container .navbar .top-row {
+  margin-top: 25px;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  justify-content: center;
+}
+
+.container .main-container .navbar .top-row .left-side {
+  display: grid;
+  grid-template-columns: 5% 55%;
+}
+
+.container .main-container .navbar .top-row img {
+  height: 20px;
+  width: 20px;
+}
+
+.container .main-container .navbar .top-row .left-side input {
+  background-color: #e2e8f0;
+  height: 22px;
+  width: 45vw;
+  border: 0px solid black;
+  border-radius: 12px;
+}
+
+.container .main-container .navbar .top-row .right-side {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 10% 10% 80%;
+  gap: 5px;
+}
+
+.container .main-container .navbar .top-row .right-side .profile {
+  height: 30px;
+  width: 30px;
+}
+
+.container .main-container .navbar .top-row .right-side p {
+  margin: 0;
+  word-break: keep-all;
+  font-size: 18px;
+  font-weight: 800;
 }
